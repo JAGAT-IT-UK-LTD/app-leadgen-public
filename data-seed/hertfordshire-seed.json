@@ -1,0 +1,338 @@
+{
+  "_meta": {
+    "description": "FICTIONAL example seed list. Every business, phone number (Ofcom drama ranges 01632 960xxx / 07700 900xxx), email/website (example.com) and postcode (inward code 1CI never issued by Royal Mail) is made up. The real list is kept in a private data repo.",
+    "gatheredOn": "2026-08-22",
+    "source": "fictional-example",
+    "count": 39
+  },
+  "leads": [
+    {
+      "name": "Example Motors 01",
+      "category": "car_repair",
+      "town": "Watford",
+      "website": "https://example-motors-01.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 02",
+      "category": "car_repair",
+      "town": "Watford",
+      "website": "https://example-motors-02.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 03",
+      "category": "car_repair",
+      "town": "Watford",
+      "website": "https://example-motors-03.example.com/",
+      "phone": null,
+      "address": "Unit 3, Example Trading Estate, Watford",
+      "postcode": "WD24 1CI",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 04",
+      "category": "car_repair",
+      "town": "Watford",
+      "website": "https://example-motors-04.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 05",
+      "category": "car_repair",
+      "town": "Watford",
+      "website": "https://example-motors-05.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 06",
+      "category": "car_repair",
+      "town": "Watford",
+      "website": "https://example-motors-06.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 07",
+      "category": "car_repair",
+      "town": "St Albans",
+      "website": "https://example-motors-07.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 08",
+      "category": "car_repair",
+      "town": "St Albans",
+      "website": "https://example-motors-08.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 09",
+      "category": "car_repair",
+      "town": "St Albans",
+      "website": "https://example-motors-09.example.com/",
+      "phone": "01632 960001",
+      "phoneAlt": "01632 960002",
+      "verified": false,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 10",
+      "category": "car_repair",
+      "town": "St Albans",
+      "website": "https://example-motors-10.example.com/",
+      "phone": null,
+      "address": "Unit 10, Example Trading Estate, St Albans",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 11",
+      "category": "car_repair",
+      "town": "St Albans",
+      "website": "https://example-motors-11.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 12",
+      "category": "car_repair",
+      "town": "St Albans",
+      "website": "https://example-motors-12.example.com/",
+      "phone": "01632 960003",
+      "verified": false,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 13",
+      "category": "car_repair",
+      "town": "St Albans",
+      "website": "https://example-motors-13.example.com/",
+      "phone": "01632 960004",
+      "verified": false,
+      "address": "Unit 13, Example Trading Estate, St Albans",
+      "postcode": "AL3 1CI",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 14",
+      "category": "car_repair",
+      "town": "Welwyn Garden City",
+      "website": "https://example-motors-14.example.com/",
+      "phone": "01632 960005",
+      "verified": false,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 15",
+      "category": "car_repair",
+      "town": "Hemel Hempstead",
+      "website": "https://example-motors-15.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 16",
+      "category": "car_repair",
+      "town": "Hemel Hempstead",
+      "website": "https://example-motors-16.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 17",
+      "category": "car_repair",
+      "town": "Hemel Hempstead",
+      "website": "https://example-motors-17.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 18",
+      "category": "car_repair",
+      "town": "Hemel Hempstead",
+      "website": "https://example-motors-18.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 19",
+      "category": "car_repair",
+      "town": "Stevenage",
+      "website": "https://example-motors-19.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 20 Ltd",
+      "category": "car_repair",
+      "town": "Stevenage",
+      "website": null,
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 21",
+      "category": "car_repair",
+      "town": "Welwyn",
+      "website": "https://example-motors-21.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 22",
+      "category": "car_repair",
+      "town": "Welwyn Garden City",
+      "website": "https://example-motors-22.example.com/",
+      "phone": "01632 960006",
+      "verified": false,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 23",
+      "category": "car_repair",
+      "town": "Welwyn Garden City",
+      "website": "https://example-motors-23.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 24",
+      "category": "car_repair",
+      "town": "Welwyn Garden City",
+      "website": "https://example-motors-24.example.com/",
+      "phone": "01632 960007",
+      "verified": false,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 25",
+      "category": "car_repair",
+      "town": "Hitchin",
+      "website": "https://example-motors-25.example.com/",
+      "phone": null,
+      "address": "Unit 25, Example Trading Estate, Hitchin",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 26",
+      "category": "car_repair",
+      "town": "Hitchin",
+      "website": "https://example-motors-26.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 27",
+      "category": "car_repair",
+      "town": "Hitchin",
+      "website": null,
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 28",
+      "category": "car_repair",
+      "town": "Letchworth Garden City",
+      "website": "https://example-motors-28.example.com/",
+      "phone": null,
+      "address": "Unit 28, Example Trading Estate, Letchworth Garden City",
+      "postcode": "SG6 1CI",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 29",
+      "category": "car_repair",
+      "town": "Bishop's Stortford",
+      "website": "https://example-motors-29.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 30",
+      "category": "car_repair",
+      "town": "Bishop's Stortford",
+      "website": "https://example-motors-30.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 31",
+      "category": "car_repair",
+      "town": "Bishop's Stortford",
+      "website": "https://example-motors-31.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 32",
+      "category": "car_repair",
+      "town": "Bishop's Stortford",
+      "website": "https://example-motors-32.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 33",
+      "category": "car_repair",
+      "town": "Bishop's Stortford",
+      "website": "https://example-motors-33.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 34",
+      "category": "car_repair",
+      "town": "Ware",
+      "website": "https://example-motors-34.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Moto 35",
+      "category": "motorcycle_repair",
+      "town": "Hertfordshire",
+      "website": "https://example-motors-35.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Moto 36",
+      "category": "motorcycle_repair",
+      "town": "Waltham Cross",
+      "website": "https://example-motors-36.example.com/",
+      "phone": null,
+      "postcode": "EN8 1CI",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Moto 37",
+      "category": "motorcycle_repair",
+      "town": "Watford",
+      "website": "https://example-motors-37.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. Mobile mechanic, comes to you. FICTIONAL example record."
+    },
+    {
+      "name": "Example Moto 38",
+      "category": "motorcycle_repair",
+      "town": "St Albans",
+      "website": "https://example-motors-38.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Moto 39",
+      "category": "motorcycle_repair",
+      "town": "Hertfordshire",
+      "website": "https://example-motors-39.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    }
+  ]
+}
