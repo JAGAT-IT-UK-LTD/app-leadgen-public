@@ -1,9 +1,9 @@
 {
   "_meta": {
     "description": "FICTIONAL example seed list. Every business, phone number (Ofcom drama ranges 01632 960xxx / 07700 900xxx), email/website (example.com) and postcode (inward code 1CI never issued by Royal Mail) is made up. The real list is kept in a private data repo.",
-    "gatheredOn": "2026-08-23",
+    "gatheredOn": "2026-08-25",
     "source": "fictional-example",
-    "count": 59
+    "count": 67
   },
   "leads": [
     {
@@ -495,6 +495,72 @@
       "name": "Example Moto 59",
       "category": "motorcycle_repair",
       "town": "Stevenage",
+      "website": null,
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 60",
+      "category": "car_repair",
+      "town": "Hatfield",
+      "website": "https://example-motors-60.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 61 Ltd",
+      "category": "car_repair",
+      "town": "Buntingford",
+      "website": "https://example-motors-61.example.com/",
+      "phone": null,
+      "address": "Unit 61, Example Trading Estate, Buntingford",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 62",
+      "category": "car_repair",
+      "town": "Royston",
+      "website": "https://example-motors-62.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 63",
+      "category": "car_repair",
+      "town": "Stevenage",
+      "website": null,
+      "phone": null,
+      "address": "Unit 63, Example Trading Estate, Stevenage",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 64",
+      "category": "car_repair",
+      "town": "Bushey",
+      "website": "https://example-motors-64.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 65",
+      "category": "car_repair",
+      "town": "Bushey",
+      "website": "https://example-motors-65.example.com/",
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 66",
+      "category": "car_repair",
+      "town": "Bushey",
+      "website": null,
+      "phone": null,
+      "note": "Independent workshop. Servicing, MOTs and repairs. Mobile mechanic, comes to you. FICTIONAL example record."
+    },
+    {
+      "name": "Example Motors 67",
+      "category": "car_repair",
+      "town": "Hitchin",
       "website": null,
       "phone": null,
       "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
