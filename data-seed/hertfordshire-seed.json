@@ -3,7 +3,9 @@
     "description": "FICTIONAL example seed list. Every business, phone number (Ofcom drama ranges 01632 960xxx / 07700 900xxx), email/website (example.com) and postcode (inward code 1CI never issued by Royal Mail) is made up. The real list is kept in a private data repo.",
     "gatheredOn": "2026-08-25",
     "source": "fictional-example",
-    "count": 67
+    "count": 66,
+    "updated": "2026-09-22",
+    "note": "Fictional data for development and tests only. To run on the real list, set LEADGEN_SEED_FILE to the file from the private data repo."
   },
   "leads": [
     {
@@ -11,8 +13,10 @@
       "category": "car_repair",
       "town": "Watford",
       "website": "https://example-motors-01.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960010",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "WD24 1CI",
+      "address": "Unit 1, Example Trading Estate, Watford"
     },
     {
       "name": "Example Motors 02",
@@ -27,33 +31,46 @@
       "category": "car_repair",
       "town": "Watford",
       "website": "https://example-motors-03.example.com/",
-      "phone": null,
+      "phone": "07700 900001",
       "address": "Unit 3, Example Trading Estate, Watford",
       "postcode": "WD24 1CI",
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "note": "Independent workshop. Servicing, MOTs and repairs. Mobile mechanic, comes to you. FICTIONAL example record."
     },
     {
       "name": "Example Motors 04",
       "category": "car_repair",
       "town": "Watford",
       "website": "https://example-motors-04.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960011",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "WD24 1CI",
+      "address": "Unit 4, Example Trading Estate, Watford",
+      "openingHours": [
+        "Monday: 08:00-17:30",
+        "Tuesday: 08:00-17:30",
+        "Wednesday: 08:00-17:30",
+        "Thursday: 08:00-17:30",
+        "Friday: 08:00-17:30",
+        "Saturday: 08:30-13:00",
+        "Sunday: Closed"
+      ]
     },
     {
       "name": "Example Motors 05",
       "category": "car_repair",
       "town": "Watford",
       "website": "https://example-motors-05.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960012",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "WD24 1CI",
+      "address": "Unit 5, Example Trading Estate, Watford"
     },
     {
       "name": "Example Motors 06",
       "category": "car_repair",
       "town": "Watford",
       "website": "https://example-motors-06.example.com/",
-      "phone": null,
+      "phone": "01632 960013",
       "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
     },
     {
@@ -61,16 +78,20 @@
       "category": "car_repair",
       "town": "St Albans",
       "website": "https://example-motors-07.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960014",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "AL1 1CI",
+      "address": "Unit 7, Example Trading Estate, St Albans"
     },
     {
       "name": "Example Motors 08",
       "category": "car_repair",
       "town": "St Albans",
       "website": "https://example-motors-08.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960015",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "AL1 1CI",
+      "address": "Unit 8, Example Trading Estate, St Albans"
     },
     {
       "name": "Example Motors 09",
@@ -87,17 +108,21 @@
       "category": "car_repair",
       "town": "St Albans",
       "website": "https://example-motors-10.example.com/",
-      "phone": null,
+      "phone": "01632 960016",
       "address": "Unit 10, Example Trading Estate, St Albans",
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "AL2 1CI"
     },
     {
       "name": "Example Motors 11",
       "category": "car_repair",
       "town": "St Albans",
       "website": "https://example-motors-11.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960017",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "AL1 1CI",
+      "address": "Unit 11, Example Trading Estate, St Albans",
+      "email": "info@example-motors-11.example.com"
     },
     {
       "name": "Example Motors 12",
@@ -133,7 +158,7 @@
       "category": "car_repair",
       "town": "Hemel Hempstead",
       "website": "https://example-motors-15.example.com/",
-      "phone": null,
+      "phone": "01632 960018",
       "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
     },
     {
@@ -141,48 +166,60 @@
       "category": "car_repair",
       "town": "Hemel Hempstead",
       "website": "https://example-motors-16.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960019",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "address": "Unit 16, Example Trading Estate, Hemel Hempstead"
     },
     {
       "name": "Example Motors 17",
       "category": "car_repair",
       "town": "Hemel Hempstead",
       "website": "https://example-motors-17.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960020",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "HP3 1CI",
+      "address": "Unit 17, Example Trading Estate, Hemel Hempstead"
     },
     {
       "name": "Example Motors 18",
       "category": "car_repair",
       "town": "Hemel Hempstead",
       "website": "https://example-motors-18.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960021",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "HP3 1CI",
+      "address": "Unit 18, Example Trading Estate, Hemel Hempstead"
     },
     {
       "name": "Example Motors 19",
       "category": "car_repair",
       "town": "Stevenage",
       "website": "https://example-motors-19.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960022",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG1 1CI",
+      "address": "Unit 19, Example Trading Estate, Stevenage"
     },
     {
       "name": "Example Motors 20 Ltd",
       "category": "car_repair",
       "town": "Stevenage",
-      "website": null,
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "website": "https://example-motors-20.example.com/",
+      "phone": "01632 960023",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG1 1CI",
+      "address": "Unit 20, Example Trading Estate, Stevenage"
     },
     {
       "name": "Example Motors 21",
       "category": "car_repair",
       "town": "Welwyn",
       "website": "https://example-motors-21.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960024",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "AL6 1CI",
+      "address": "Unit 21, Example Trading Estate, Welwyn",
+      "email": "info@example-motors-21.example.com"
     },
     {
       "name": "Example Motors 22",
@@ -198,8 +235,10 @@
       "category": "car_repair",
       "town": "Welwyn Garden City",
       "website": "https://example-motors-23.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960025",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "AL7 1CI",
+      "address": "Unit 23, Example Trading Estate, Welwyn Garden City"
     },
     {
       "name": "Example Motors 24",
@@ -215,100 +254,172 @@
       "category": "car_repair",
       "town": "Hitchin",
       "website": "https://example-motors-25.example.com/",
-      "phone": null,
+      "phone": "01632 960026",
       "address": "Unit 25, Example Trading Estate, Hitchin",
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG4 1CI",
+      "openingHours": [
+        "Monday: 08:00-17:30",
+        "Tuesday: 08:00-17:30",
+        "Wednesday: 08:00-17:30",
+        "Thursday: 08:00-17:30",
+        "Friday: 08:00-17:30",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ]
     },
     {
       "name": "Example Motors 26",
       "category": "car_repair",
       "town": "Hitchin",
       "website": "https://example-motors-26.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960027",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG5 1CI",
+      "address": "Unit 26, Example Trading Estate, Hitchin"
     },
     {
       "name": "Example Motors 27",
       "category": "car_repair",
       "town": "Hitchin",
-      "website": null,
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "website": "https://example-motors-27.example.com/",
+      "phone": "01632 960028",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG4 1CI",
+      "address": "Unit 27, Example Trading Estate, Hitchin"
     },
     {
       "name": "Example Motors 28",
       "category": "car_repair",
       "town": "Letchworth Garden City",
       "website": "https://example-motors-28.example.com/",
-      "phone": null,
+      "phone": "01632 960029",
       "address": "Unit 28, Example Trading Estate, Letchworth Garden City",
       "postcode": "SG6 1CI",
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "note": "Independent workshop. Servicing, MOTs and repairs. Mobile mechanic, comes to you. FICTIONAL example record."
     },
     {
       "name": "Example Motors 29",
       "category": "car_repair",
       "town": "Bishop's Stortford",
       "website": "https://example-motors-29.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960030",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "CM23 1CI",
+      "address": "Unit 29, Example Trading Estate, Bishop's Stortford",
+      "openingHours": [
+        "Monday: 08:00-17:30",
+        "Tuesday: 08:00-17:30",
+        "Wednesday: 08:00-17:30",
+        "Thursday: 08:00-17:30",
+        "Friday: 08:00-17:30",
+        "Saturday: 08:30-13:00",
+        "Sunday: Closed"
+      ]
     },
     {
       "name": "Example Motors 30",
       "category": "car_repair",
       "town": "Bishop's Stortford",
       "website": "https://example-motors-30.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960031",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "CM23 1CI",
+      "address": "Unit 30, Example Trading Estate, Bishop's Stortford",
+      "openingHours": [
+        "Monday: 08:00-17:30",
+        "Tuesday: 08:00-17:30",
+        "Wednesday: 08:00-17:30",
+        "Thursday: 08:00-17:30",
+        "Friday: 08:00-17:30",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ]
     },
     {
       "name": "Example Motors 31",
       "category": "car_repair",
       "town": "Bishop's Stortford",
       "website": "https://example-motors-31.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960032",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "CM23 1CI",
+      "address": "Unit 31, Example Trading Estate, Bishop's Stortford"
     },
     {
       "name": "Example Motors 32",
       "category": "car_repair",
       "town": "Bishop's Stortford",
       "website": "https://example-motors-32.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960033",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "CM23 1CI",
+      "address": "Unit 32, Example Trading Estate, Bishop's Stortford",
+      "openingHours": [
+        "Monday: 08:00-17:30",
+        "Tuesday: 08:00-17:30",
+        "Wednesday: 08:00-17:30",
+        "Thursday: 08:00-17:30",
+        "Friday: 08:00-17:30",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ]
     },
     {
       "name": "Example Motors 33",
       "category": "car_repair",
       "town": "Bishop's Stortford",
       "website": "https://example-motors-33.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960034",
+      "note": "Independent workshop. Servicing, MOTs and repairs. Runs a 24-hour recovery line. FICTIONAL example record."
     },
     {
       "name": "Example Motors 34",
       "category": "car_repair",
       "town": "Ware",
       "website": "https://example-motors-34.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960035",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG12 1CI",
+      "address": "Unit 34, Example Trading Estate, Ware",
+      "openingHours": [
+        "Monday: 08:00-17:30",
+        "Tuesday: 08:00-17:30",
+        "Wednesday: 08:00-17:30",
+        "Thursday: 08:00-17:30",
+        "Friday: 08:00-17:30",
+        "Saturday: 08:30-13:00",
+        "Sunday: Closed"
+      ]
     },
     {
       "name": "Example Moto 35",
       "category": "motorcycle_repair",
-      "town": "Hertfordshire",
+      "town": "Letchworth Garden City",
       "website": "https://example-motors-35.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960036",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG6 1CI",
+      "address": "Unit 35, Example Trading Estate, Letchworth Garden City"
     },
     {
       "name": "Example Moto 36",
       "category": "motorcycle_repair",
       "town": "Waltham Cross",
       "website": "https://example-motors-36.example.com/",
-      "phone": null,
+      "phone": "01632 960037",
       "postcode": "EN8 1CI",
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "address": "Unit 36, Example Trading Estate, Waltham Cross",
+      "openingHours": [
+        "Monday: 09:00-17:00",
+        "Tuesday: 09:00-17:00",
+        "Wednesday: 09:00-17:00",
+        "Thursday: 09:00-18:00",
+        "Friday: 09:00-18:00",
+        "Saturday: 09:00-12:00",
+        "Sunday: Closed"
+      ]
     },
     {
       "name": "Example Moto 37",
@@ -323,40 +434,37 @@
       "category": "motorcycle_repair",
       "town": "St Albans",
       "website": "https://example-motors-38.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
-    },
-    {
-      "name": "Example Moto 39",
-      "category": "motorcycle_repair",
-      "town": "Hertfordshire",
-      "website": "https://example-motors-39.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "07700 900002",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "AL2 1CI",
+      "address": "Unit 38, Example Trading Estate, St Albans"
     },
     {
       "name": "Example Motors 40",
       "category": "car_repair",
       "town": "Elstree",
       "website": "https://example-motors-40.example.com/",
-      "phone": null,
+      "phone": "01632 960038",
       "address": "Unit 40, Example Trading Estate, Elstree",
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "WD6 1CI"
     },
     {
       "name": "Example Motors 41",
       "category": "car_repair",
       "town": "Borehamwood",
       "website": null,
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960039",
+      "note": "Independent workshop. Servicing, MOTs and repairs. Bookable online. FICTIONAL example record.",
+      "postcode": "WD6 1CI",
+      "address": "Unit 41, Example Trading Estate, Borehamwood"
     },
     {
       "name": "Example Motors 42",
       "category": "car_repair",
       "town": "Kings Langley",
       "website": "https://example-motors-42.example.com/",
-      "phone": null,
+      "phone": "01632 960040",
       "address": "Unit 42, Example Trading Estate, Kings Langley",
       "postcode": "WD4 1CI",
       "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
@@ -366,71 +474,87 @@
       "category": "car_repair",
       "town": "Abbots Langley",
       "website": "https://example-motors-43.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960041",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "email": "info@example-motors-43.example.com"
     },
     {
       "name": "Example Motors 44",
       "category": "car_repair",
       "town": "Kings Langley",
       "website": "https://example-motors-44.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960042",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "WD4 1CI",
+      "address": "Unit 44, Example Trading Estate, Kings Langley",
+      "email": "info@example-motors-44.example.com"
     },
     {
       "name": "Example Motors 45",
       "category": "car_repair",
       "town": "Berkhamsted",
       "website": "https://example-motors-45.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960043",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "HP4 1CI",
+      "address": "Unit 45, Example Trading Estate, Berkhamsted"
     },
     {
       "name": "Example Motors 46",
       "category": "car_repair",
       "town": "Potters Bar",
       "website": "https://example-motors-46.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960044",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "EN6 1CI",
+      "address": "Unit 46, Example Trading Estate, Potters Bar"
     },
     {
       "name": "Example Motors 47",
       "category": "car_repair",
       "town": "Potters Bar",
       "website": "https://example-motors-47.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960045",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "EN6 1CI",
+      "address": "Unit 47, Example Trading Estate, Potters Bar"
     },
     {
       "name": "Example Motors 48",
       "category": "car_repair",
       "town": "Croxley Green",
-      "website": null,
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "website": "https://example-motors-48.example.com/",
+      "phone": "01632 960046",
+      "note": "Independent workshop. Servicing, MOTs and repairs. Bookable online. FICTIONAL example record.",
+      "postcode": "WD3 1CI",
+      "address": "Unit 48, Example Trading Estate, Croxley Green"
     },
     {
       "name": "Example Motors 49",
       "category": "car_repair",
       "town": "Rickmansworth",
       "website": null,
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960047",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "WD3 1CI",
+      "address": "Unit 49, Example Trading Estate, Rickmansworth"
     },
     {
       "name": "Example Motors 50",
       "category": "car_repair",
       "town": "Rickmansworth",
-      "website": null,
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "website": "https://example-motors-50.example.com/",
+      "phone": "01632 960048",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "WD3 1CI",
+      "address": "Unit 50, Example Trading Estate, Rickmansworth"
     },
     {
       "name": "Example Motors 51",
       "category": "car_repair",
       "town": "Rickmansworth",
       "website": "https://example-motors-51.example.com/",
-      "phone": null,
+      "phone": "01632 960049",
       "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
     },
     {
@@ -439,15 +563,18 @@
       "town": "Watford",
       "website": null,
       "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "note": "Independent workshop. Servicing, MOTs and repairs. Mobile mechanic, comes to you. FICTIONAL example record."
     },
     {
       "name": "Example Motors 53 Ltd",
       "category": "car_repair",
       "town": "Waltham Cross",
       "website": "https://example-motors-53.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960050",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "EN8 1CI",
+      "address": "Unit 53, Example Trading Estate, Waltham Cross",
+      "email": "info@example-motors-53.example.com"
     },
     {
       "name": "Example Motors 54",
@@ -472,98 +599,147 @@
       "category": "car_repair",
       "town": "Cheshunt",
       "website": "https://example-motors-56.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960051",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "EN8 1CI",
+      "address": "Unit 56, Example Trading Estate, Cheshunt",
+      "openingHours": [
+        "Monday: 08:00-17:30",
+        "Tuesday: 08:00-17:30",
+        "Wednesday: 08:00-17:30",
+        "Thursday: 08:00-17:30",
+        "Friday: 08:00-17:30",
+        "Saturday: 08:30-13:00",
+        "Sunday: Closed"
+      ]
     },
     {
       "name": "Example Motors 57 Ltd",
       "category": "car_repair",
       "town": "Cheshunt",
       "website": "https://example-motors-57.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960052",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "EN8 1CI",
+      "address": "Unit 57, Example Trading Estate, Cheshunt"
     },
     {
       "name": "Example Motors 58",
       "category": "car_repair",
       "town": "Hoddesdon",
       "website": null,
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960053",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "EN11 1CI",
+      "address": "Unit 58, Example Trading Estate, Hoddesdon"
     },
     {
       "name": "Example Moto 59",
       "category": "motorcycle_repair",
-      "town": "Stevenage",
-      "website": null,
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "town": "Waltham Cross",
+      "website": "https://example-motors-59.example.com/",
+      "phone": "01632 960054",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "EN8 1CI",
+      "address": "Unit 59, Example Trading Estate, Waltham Cross",
+      "email": "info@example-motors-59.example.com",
+      "openingHours": [
+        "Monday: 08:45-17:30",
+        "Tuesday: 08:45-17:30",
+        "Wednesday: 08:45-17:30",
+        "Thursday: Closed",
+        "Friday: 08:45-17:30",
+        "Saturday: 09:00-15:45",
+        "Sunday: Closed"
+      ]
     },
     {
       "name": "Example Motors 60",
       "category": "car_repair",
       "town": "Hatfield",
       "website": "https://example-motors-60.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960055",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "AL10 1CI",
+      "address": "Unit 60, Example Trading Estate, Hatfield"
     },
     {
       "name": "Example Motors 61 Ltd",
       "category": "car_repair",
       "town": "Buntingford",
       "website": "https://example-motors-61.example.com/",
-      "phone": null,
+      "phone": "01632 960056",
       "address": "Unit 61, Example Trading Estate, Buntingford",
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG9 1CI"
     },
     {
       "name": "Example Motors 62",
       "category": "car_repair",
       "town": "Royston",
       "website": "https://example-motors-62.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960057",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG8 1CI",
+      "address": "Unit 62, Example Trading Estate, Royston"
     },
     {
       "name": "Example Motors 63",
       "category": "car_repair",
       "town": "Stevenage",
       "website": null,
-      "phone": null,
-      "address": "Unit 63, Example Trading Estate, Stevenage",
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960022",
+      "address": "Unit 19, Example Trading Estate, Stevenage",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG1 1CI"
     },
     {
       "name": "Example Motors 64",
       "category": "car_repair",
       "town": "Bushey",
       "website": "https://example-motors-64.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960058",
+      "note": "Independent workshop. Servicing, MOTs and repairs. Runs a 24-hour recovery line. FICTIONAL example record.",
+      "postcode": "WD23 1CI",
+      "address": "Unit 64, Example Trading Estate, Bushey",
+      "email": "info@example-motors-64.example.com"
     },
     {
       "name": "Example Motors 65",
       "category": "car_repair",
       "town": "Bushey",
       "website": "https://example-motors-65.example.com/",
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "phone": "01632 960059",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "WD23 1CI",
+      "address": "Unit 65, Example Trading Estate, Bushey"
     },
     {
       "name": "Example Motors 66",
       "category": "car_repair",
       "town": "Bushey",
       "website": null,
-      "phone": null,
+      "phone": "07700 900003",
       "note": "Independent workshop. Servicing, MOTs and repairs. Mobile mechanic, comes to you. FICTIONAL example record."
     },
     {
       "name": "Example Motors 67",
       "category": "car_repair",
-      "town": "Hitchin",
-      "website": null,
-      "phone": null,
-      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record."
+      "town": "Stevenage",
+      "website": "https://example-motors-67.example.com/",
+      "phone": "01632 960060",
+      "note": "Independent workshop. Servicing, MOTs and repairs. FICTIONAL example record.",
+      "postcode": "SG1 1CI",
+      "address": "Unit 67, Example Trading Estate, Stevenage",
+      "openingHours": [
+        "Monday: 08:00-17:30",
+        "Tuesday: 08:00-17:30",
+        "Wednesday: 08:00-17:30",
+        "Thursday: 08:00-17:30",
+        "Friday: 08:00-17:30",
+        "Saturday: Closed",
+        "Sunday: Closed"
+      ]
     }
   ]
 }
