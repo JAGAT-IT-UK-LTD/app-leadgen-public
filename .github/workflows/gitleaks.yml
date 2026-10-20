@@ -1,7 +1,6 @@
 name: gitleaks
+# Manual only: the org-wide scan runs nightly on uk-vps (company-hq scripts/governance/vps/gitleaks-nightly.sh, company-hq#30).
 on:
-  push:
-  pull_request:
   workflow_dispatch:
 permissions:
   contents: read

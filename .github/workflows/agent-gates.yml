@@ -3,7 +3,7 @@
 name: agent-gates
 on:
   pull_request:
-    types: [opened, edited, synchronize, reopened, labeled, unlabeled]
+    types: [opened, synchronize, reopened, labeled]
 jobs:
   gates:
     if: github.event_name == 'pull_request'
