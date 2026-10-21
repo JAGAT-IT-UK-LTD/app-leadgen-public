@@ -7,7 +7,8 @@ on:
 jobs:
   gates:
     if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, vps-light]  # TEMPORARY (company-hq#41)
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 0}
@@ -47,7 +48,8 @@ jobs:
   push-trailers:
     # Warn-only for now: pushes to main should carry Agent: and Task: lines in every commit.
     if: github.event_name == 'push'
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, vps-light]  # TEMPORARY (company-hq#41)
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 0}

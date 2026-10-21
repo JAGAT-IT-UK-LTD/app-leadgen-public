@@ -21,7 +21,8 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, vps-light]  # TEMPORARY (company-hq#41)
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - name: Code lives at repo root here (split from site-emo-blog); scripts expect leadgen/
