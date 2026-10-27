@@ -1,5 +1,5 @@
 # This directory is a private sales workspace, not part of the website.
-# Hostinger runs Apache, so this blocks it from being served if the folder
+# On Apache hosting this blocks it from being served if the folder
 # ever ends up inside the deployed web root.
 <IfModule mod_authz_core.c>
   Require all denied

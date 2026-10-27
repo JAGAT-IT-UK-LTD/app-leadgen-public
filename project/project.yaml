@@ -23,7 +23,7 @@ x-passport:
   database: "TBC"
   env_names: []
   ai_agents: []
-  progress: "Last push 2026-10-15. Description: TBC"
-  last_updated: "2026-10-15"
+  progress: "2026-10-27: fictional seed data, CI on ubuntu-latest, prepared for public visibility"
+  last_updated: "2026-10-27"
   updated_by: "Grok Bot (passport generator)"
   completeness: 26

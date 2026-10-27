@@ -46,11 +46,13 @@ Three sources, all opt-in via `--source`:
 
 **`seed`** (default, no setup) — 66 FICTIONAL example garages and bike
 workshops shipped in `data-seed/hertfordshire-seed.json`, made up for development and tests (the real list lives in a
-private data repo — set LEADGEN_SEED_FILE to it). 63 of them carry a
-published phone number, so the list is callable on day one with no API key.
-Phone numbers marked `verified: false` were read from directory listings and
-are confirmed by the enrich step against the business's own website before
-they are trusted — and screened against TPS/CTPS before anyone dials.
+private data repo — set `LEADGEN_SEED_FILE=/path/to/real-seed.json` to use it).
+All phone numbers are Ofcom drama numbers (01632 960xxx, 07700 900xxx), all
+websites and emails are on example.com, and every postcode uses the never-issued
+inward code `1CI`, so nothing in this repo can reach a real business.
+With a real list, numbers marked `verified: false` are confirmed by the enrich
+step against the business's own website before they are trusted — and screened
+against TPS/CTPS before anyone dials.
 
 **`places`** — Google Places API (New). This is the official, Terms-compliant
 way to read Google Business Profile listings, and it is the source that makes
