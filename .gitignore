@@ -1,0 +1,5 @@
+# Generated lead data: never commit (real business contact data)
+data/
+node_modules/
+.env
+.env.*

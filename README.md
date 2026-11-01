@@ -19,18 +19,32 @@ that happens to live in the same repo.
 No dependencies, no build step. Node 18+ (tested on Node 22).
 
 ```bash
-node leadgen/run.mjs all      # collect → enrich → score → write messages → export
-node leadgen/run.mjs stats    # see what you have
+node run.mjs all      # collect → enrich → score → write messages → export
+node run.mjs stats    # see what you have
 ```
+
+Commands work from any folder (paths resolve from the repo root).
+
+**Offline / free demo (no API key, no network):**
+
+```bash
+node test.mjs                              # 48 offline checks
+node run.mjs collect --source=seed         # sample seed list only
+node run.mjs score && node run.mjs outreach && node run.mjs export
+node run.mjs stats
+```
+
+`all` without `GOOGLE_PLACES_API_KEY` also works: the Places source is skipped,
+the seed (and free OpenStreetMap) sources run, and `enrich` reads public websites.
 
 Then open the desk:
 
 ```bash
-cd leadgen && python3 -m http.server 8899
+python3 -m http.server 8899   # from the repo root
 # → http://127.0.0.1:8899/dashboard.html
 ```
 
-Outputs land in `leadgen/data/` (git-ignored — it holds live contact details):
+Outputs land in `data/` (git-ignored — it holds live contact details):
 
 | File | What it is |
 |---|---|
@@ -61,8 +75,11 @@ most: rating, review count, opening hours, and the phone number Google holds.
 
 ```bash
 export GOOGLE_PLACES_API_KEY="…"
-node leadgen/run.mjs collect --source=places
+node run.mjs collect --source=places
 ```
+
+> Paid API: documented here but not exercised in tests or CI. Google bills
+> per request beyond the free monthly credit; only R creates and pays for the key.
 
 Enable **Places API (New)** in Google Cloud and restrict the key to it. A full
 county sweep is roughly 120 requests (2 categories × 31 towns × ~2 queries).
@@ -163,20 +180,20 @@ marked call-ready until you record the check:
 
 ```bash
 # in the dashboard: "Mark TPS/CTPS checked", then
-node leadgen/run.mjs import-status --file=lead-statuses.json
-node leadgen/run.mjs outreach
+node run.mjs import-status --file=lead-statuses.json
+node run.mjs outreach
 ```
 
 **Opt-outs.** One command, applied immediately to matching leads and honoured
 on every future run:
 
 ```bash
-node leadgen/run.mjs suppress --email=someone@garage.example.com
-node leadgen/run.mjs suppress --phone=+441632960123
-node leadgen/run.mjs suppress --domain=garage.example.com
+node run.mjs suppress --email=someone@garage.example.com
+node run.mjs suppress --phone=+441632960123
+node run.mjs suppress --domain=garage.example.com
 ```
 
-**Data handling.** `leadgen/data/` is git-ignored, and `leadgen/.htaccess`
+**Data handling.** `data/` is git-ignored, and `.htaccess`
 denies web access in case the folder ever lands inside the deployed web root.
 Keep it that way — it holds live contact details and your notes about real
 people's businesses.
@@ -203,24 +220,24 @@ See [`cowork-task.md`](cowork-task.md) for the exact task to schedule.
 ## Commands
 
 ```bash
-node leadgen/run.mjs all [--source=all]        # the whole pipeline
-node leadgen/run.mjs collect --source=seed|places|overpass|all
-node leadgen/run.mjs enrich [--limit=20] [--force]
-node leadgen/run.mjs reviews [--limit=50]      # needs GOOGLE_PLACES_API_KEY
-node leadgen/run.mjs score
-node leadgen/run.mjs outreach
-node leadgen/run.mjs export
-node leadgen/run.mjs stats
-node leadgen/run.mjs doctor                      # what is stopping me sending today?
-node leadgen/run.mjs suppress --email=… --phone=… --domain=… --name=…
-node leadgen/run.mjs import-status --file=lead-statuses.json
-node leadgen/test.mjs [--show]                 # 48 offline checks, no network
+node run.mjs all [--source=all]        # the whole pipeline
+node run.mjs collect --source=seed|places|overpass|all
+node run.mjs enrich [--limit=20] [--force]
+node run.mjs reviews [--limit=50]      # needs GOOGLE_PLACES_API_KEY
+node run.mjs score
+node run.mjs outreach
+node run.mjs export
+node run.mjs stats
+node run.mjs doctor                      # what is stopping me sending today?
+node run.mjs suppress --email=… --phone=… --domain=… --name=…
+node run.mjs import-status --file=lead-statuses.json
+node test.mjs [--show]                 # 48 offline checks, no network
 ```
 
 ## Files
 
 ```
-leadgen/
+app-leadgen-public/
   config.json                     towns, categories, chains to exclude, thresholds
   run.mjs                         CLI and state merging
   test.mjs                        offline self-test

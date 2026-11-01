@@ -92,9 +92,9 @@
   },
 
   "output": {
-    "dir": "leadgen/data",
-    "leadsFile": "leadgen/data/leads.json",
-    "csvFile": "leadgen/data/leads.csv",
-    "briefingFile": "leadgen/data/briefing.md"
+    "dir": "data",
+    "leadsFile": "data/leads.json",
+    "csvFile": "data/leads.csv",
+    "briefingFile": "data/briefing.md"
   }
 }

@@ -8,7 +8,7 @@ zero, which looks like a bug but is just a blocked egress proxy.
 
 ## One-time setup
 
-1. Fill in `sender` in `leadgen/config.json` — business name, phone, email,
+1. Fill in `sender` in `config.json` — business name, phone, email,
    website, postal address, calendar link. PECR requires you to identify
    yourself, and the templates read these fields.
 2. Get a Google Places API key (enable **Places API (New)**, restrict the key
@@ -18,7 +18,7 @@ zero, which looks like a bug but is just a blocked egress proxy.
    ```
    Without it the run still works from the seed list and OpenStreetMap — you
    just lose ratings, opening hours and the review signals.
-3. Run it once by hand and read `leadgen/data/briefing.md` before you schedule
+3. Run it once by hand and read `data/briefing.md` before you schedule
    anything. If the copy does not sound like you, edit `lib/outreach.mjs` now
    rather than after 200 emails have gone out.
 
@@ -28,10 +28,10 @@ Create a recurring Cowork task — **Monday 07:00**, weekly — with this prompt
 
 > Run the Hertfordshire lead pipeline in this repo.
 >
-> 1. `node leadgen/run.mjs all --source=all`
-> 2. `node leadgen/test.mjs` — if any check fails, stop and tell me what broke
+> 1. `node run.mjs all --source=all`
+> 2. `node test.mjs` — if any check fails, stop and tell me what broke
 >    instead of sending me a list.
-> 3. Read `leadgen/data/briefing.md` and reply with, in this order:
+> 3. Read `data/briefing.md` and reply with, in this order:
 >    - how many **new** businesses appeared this week (`isNew: true`) and their
 >      names, towns and scores
 >    - any existing lead whose score moved by 10 points or more, and why it moved
@@ -61,7 +61,7 @@ The dashboard saves statuses and notes in your browser. Once a week, click
 leads you have already called:
 
 ```bash
-node leadgen/run.mjs import-status --file=~/Downloads/lead-statuses.json
+node run.mjs import-status --file=~/Downloads/lead-statuses.json
 ```
 
 Worth adding as a second step in the scheduled prompt once you are in the

@@ -4,7 +4,7 @@
  * the analyser, the scorer and the message builder, and asserts the pipeline
  * reaches the conclusions the campaign depends on.
  *
- *   node leadgen/test.mjs
+ *   node test.mjs
  */
 import assert from 'node:assert/strict';
 import { analyseHtml } from './lib/enrich.mjs';
@@ -13,7 +13,7 @@ import { buildOutreach } from './lib/outreach.mjs';
 import { normalise } from './lib/normalise.mjs';
 import { readJSON, normalisePhone, extractPostcode, extractEmails } from './lib/util.mjs';
 
-const config = readJSON('leadgen/config.json');
+const config = readJSON('config.json');
 let passed = 0;
 const check = (name, fn) => {
   try {

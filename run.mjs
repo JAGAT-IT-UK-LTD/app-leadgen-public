@@ -2,23 +2,23 @@
 /**
  * Hertfordshire car & bike mechanic lead pipeline.
  *
- *   node leadgen/run.mjs all                     # collect → enrich → score → outreach → export
- *   node leadgen/run.mjs collect --source=seed   # seed | places | overpass | all
- *   node leadgen/run.mjs enrich --limit=20 [--force]
- *   node leadgen/run.mjs reviews --limit=50      # needs GOOGLE_PLACES_API_KEY
- *   node leadgen/run.mjs score
- *   node leadgen/run.mjs outreach
- *   node leadgen/run.mjs export
- *   node leadgen/run.mjs stats
- *   node leadgen/run.mjs doctor                  # what is stopping me sending today?
- *   node leadgen/run.mjs suppress --email=x@example.com | --phone=+441632960... | --domain=example.com
- *   node leadgen/run.mjs import-status --file=statuses.json   # merge dashboard edits back
+ *   node run.mjs all                     # collect → enrich → score → outreach → export
+ *   node run.mjs collect --source=seed   # seed | places | overpass | all
+ *   node run.mjs enrich --limit=20 [--force]
+ *   node run.mjs reviews --limit=50      # needs GOOGLE_PLACES_API_KEY
+ *   node run.mjs score
+ *   node run.mjs outreach
+ *   node run.mjs export
+ *   node run.mjs stats
+ *   node run.mjs doctor                  # what is stopping me sending today?
+ *   node run.mjs suppress --email=x@example.com | --phone=+441632960... | --domain=example.com
+ *   node run.mjs import-status --file=statuses.json   # merge dashboard edits back
  *
- * State lives in leadgen/data/leads.json and is merged across runs, so a
+ * State lives in data/leads.json and is merged across runs, so a
  * weekly scheduled run adds new businesses without losing your call notes.
  */
 import fs from 'node:fs';
-import { readJSON, writeJSON, log, parseArgs } from './lib/util.mjs';
+import { readJSON, writeJSON, log, parseArgs, rootPath } from './lib/util.mjs';
 import { normalise } from './lib/normalise.mjs';
 import { enrichAll } from './lib/enrich.mjs';
 import { scoreAll } from './lib/score.mjs';
@@ -28,7 +28,7 @@ import * as seedSource from './lib/sources/seed.mjs';
 import * as placesSource from './lib/sources/google-places.mjs';
 import * as overpassSource from './lib/sources/overpass.mjs';
 
-const CONFIG_FILE = process.env.LEADGEN_CONFIG || 'leadgen/config.json';
+const CONFIG_FILE = process.env.LEADGEN_CONFIG || 'config.json';
 
 function loadConfig() {
   const config = readJSON(CONFIG_FILE);
@@ -184,7 +184,7 @@ function cmdDoctor(config) {
   }
 
   if (!leads.length) {
-    problems.push('No leads collected yet — run `node leadgen/run.mjs collect`.');
+    problems.push('No leads collected yet — run `node run.mjs collect`.');
   } else {
     const noContact = leads.filter((l) => !l.phoneE164 && !l.email);
     if (noContact.length) {
@@ -201,7 +201,7 @@ function cmdDoctor(config) {
     if (provisional) {
       notes.push(
         `${provisional} of ${leads.length} lead(s) are scored provisionally — their website was never read. ` +
-          'Run `node leadgen/run.mjs enrich` from a machine with normal web access to firm the ranking up.'
+          'Run `node run.mjs enrich` from a machine with normal web access to firm the ranking up.'
       );
     }
     if (!process.env.GOOGLE_PLACES_API_KEY) {
@@ -225,7 +225,7 @@ function cmdDoctor(config) {
 }
 
 function cmdSuppress(config, args) {
-  const file = 'leadgen/data/suppression.json';
+  const file = 'data/suppression.json';
   const data = readJSON(file, { emails: [], phones: [], domains: [], names: [] });
   let changed = false;
   for (const [flag, key] of [['email', 'emails'], ['phone', 'phones'], ['domain', 'domains'], ['name', 'names']]) {
@@ -255,7 +255,7 @@ function cmdSuppress(config, args) {
 }
 
 function cmdImportStatus(config, args) {
-  if (!args.file || !fs.existsSync(args.file)) return log('import-status: pass --file=path/to/statuses.json');
+  if (!args.file || !fs.existsSync(rootPath(args.file))) return log('import-status: pass --file=path/to/statuses.json');
   const incoming = readJSON(args.file, {});
   const leads = loadState(config);
   let n = 0;
@@ -273,7 +273,7 @@ async function main() {
   const args = parseArgs(process.argv.slice(2));
   const cmd = args._[0] || 'all';
   const config = loadConfig();
-  fs.mkdirSync(config.output.dir, { recursive: true });
+  fs.mkdirSync(rootPath(config.output.dir), { recursive: true });
 
   switch (cmd) {
     case 'collect': await cmdCollect(config, args); break;
@@ -296,7 +296,7 @@ async function main() {
       cmdStats(config);
       break;
     default:
-      console.error(`Unknown command "${cmd}". See the header of leadgen/run.mjs for usage.`);
+      console.error(`Unknown command "${cmd}". See the header of run.mjs for usage.`);
       process.exit(1);
   }
 }
